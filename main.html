@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Qué tipo de pedagogo eres?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Libro animado" class="start-image">
+    <h1>¿Qué tipo de pedagogo eres?</h1>
+    <p>Descubre tu estilo educativo a través de este test interactivo.</p>
+    <button onclick="startQuiz()">Comenzar test</button>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <div id="question-box"></div>
+    <div class="controls">
+      <button id="back-btn" onclick="prevQuestion()">Atrás</button>
+      <button onclick="nextQuestion()">Continuar</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Tipos de Pedagogos</h2>
+      <ul>
+        <li>📘 <strong>Tradicional:</strong> Prioriza el orden, disciplina y el rol central del docente.</li>
+        <li>🧱 <strong>Constructivista:</strong> El estudiante construye su conocimiento activamente.</li>
+        <li>✊ <strong>Freiriano:</strong> Busca transformar la sociedad desde la educación crítica.</li>
+        <li>🌱 <strong>Montessori:</strong> Cree en la autonomía y libertad del niño en su aprendizaje.</li>
+        <li>💻 <strong>Tecnológico:</strong> Integra herramientas digitales en el proceso educativo.</li>
+        <li>🎨 <strong>Waldorf:</strong> Propone un enfoque artístico, emocional y espiritual del aprendizaje.</li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <script src="function.js"></script>
+</body>
+</html>
